@@ -32,7 +32,10 @@ export async function convertPdfToImage(
     const lib = await loadPdfJs();
 
     const arrayBuffer = await file.arrayBuffer();
+    console.log("PDF file name:", file.name, "size:", file.size);
+    console.log("Attempting to load PDF document...");
     const pdf = await lib.getDocument({ data: arrayBuffer }).promise;
+    console.log("PDF document loaded.");
     const page = await pdf.getPage(1);
 
     const viewport = page.getViewport({ scale: 4 });
@@ -76,6 +79,7 @@ export async function convertPdfToImage(
       ); // Set quality to maximum (1.0)
     });
   } catch (err) {
+    console.error("PDF conversion error:", err);
     return {
       imageUrl: "",
       file: null,
