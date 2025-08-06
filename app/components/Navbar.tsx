@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <Link to="/">
-        <p className="text-2xl font-bold text-gradient">Resume Genius AI</p>
+        <p className="text-2xl font-bold text-gradient monbile-text">Resume Genius AI</p>
       </Link>
-      <Link to="/upload" className='primary-button w-fit items-center'>
-        Upload Resume
+      <Link to="/upload" className='primary-button w-fit '>
+        <span className='px-2'>Upload Resume</span>
       </Link>
     </nav>
   );
