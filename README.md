@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-    <a href="https://www.youtube.com/watch?v=iYOz165wGkQ" target="_blank">
-      <img src="public/readme/hero.webp" alt="Project Banner">
+    <a href="https://puter.com/app/resume-genius-ai" target="_blank">
+      <img src="public/images/RESUME GENIUS AI.jpg" alt="Project Banner">
     </a>
   <br />
 
